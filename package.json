@@ -1,0 +1,69 @@
+{
+  "name": "jsx2css-convert-tool",
+  "displayName": "jsx2css_convert_tool",
+  "description": "jsx行内样式与css样式互相转换(除了font-family/颜色rgb/rgba等特殊一点的属性外已兼容大部分样式)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters",
+    "Azure"
+  ],
+  "keywords": [
+    "jsx-css-style",
+    "jsx",
+    "css",
+    "style",
+    "style-convert",
+    "css-transform",
+    "css-convert",
+    "css-tools"
+  ],
+  "activationEvents": [
+    "onCommand:jsx2css-convert-tool.jsx2css"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsx2css-convert-tool.jsx2css",
+        "title": "JSX <=> CSS"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection && resourceFilename =~ /.js|.vue|.html|.css|.less|.scss|.styl|.jsx/",
+          "command": "jsx2css-convert-tool.jsx2css",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "jsx2css-convert-tool.jsx2css",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.71.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}

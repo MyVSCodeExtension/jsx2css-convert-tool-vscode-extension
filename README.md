@@ -50,8 +50,8 @@ You can author your README using Visual Studio Code.  Here are some useful edito
 
 ## For more information
 
-- [JSX行内样式与CSS样式互转工具 - CoderWGB - 博客园](https://www.cnblogs.com/wgb1234/p/16659565.html)
+* [JSX行内样式与CSS样式互转工具 - CoderWGB - 博客园](https://www.cnblogs.com/wgb1234/p/16659565.html)
 
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+* [jsx2css-convert-tool-vscode-extension](https://github.com/WangGuibin/jsx2css-convert-tool-vscode-extension)
 
 **Enjoy!**
