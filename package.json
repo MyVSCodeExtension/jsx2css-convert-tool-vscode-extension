@@ -1,8 +1,15 @@
 {
   "name": "jsx2css-convert-tool",
   "displayName": "jsx2css_convert_tool",
-  "description": "jsx行内样式与css样式互相转换(除了font-family/颜色rgb/rgba等特殊一点的属性外已兼容大部分样式)",
+  "publisher": "CoderWGB",
+  "author": "CoderWGB",
+  "description": "jsx行内样式与css样式互相转换",
   "version": "0.0.1",
+  "icon": "assets/images/tools.png",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/WangGuibin/jsx2css-convert-tool-vscode-extension"
+  },
   "engines": {
     "vscode": "^1.71.0"
   },
