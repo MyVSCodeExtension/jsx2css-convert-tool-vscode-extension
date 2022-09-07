@@ -28,6 +28,16 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 * 实现了jsx行内样式与css的部分转换工作,提高了一丢丢搬砖的效率~
 
 ---
+### 1.0.1
+
+* 优化代码
+* 更新兼容性,支持^1.20.0
+
+---
+
+### 1.0.2
+
+* 更新logo
 
 ## 使用方式
 

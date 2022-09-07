@@ -60,7 +60,7 @@ function activate(context) {
 			text = css2jsx(text);
 		}
 		activeEditor.edit((editBuilder) => {
-			editBuilder.replace(new vscode.Range(selection.start, selection.end), text);
+			editBuilder.replace(selection, text);
 		})
 	});
 
